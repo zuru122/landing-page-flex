@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #800020;
+  padding: 20px;
+}
+.menu-list {
+  display: flex;
+  justify-content: baseline;
+  padding: 25px;
+}
+.logo {
+  flex: 1;
+  font-family: monospace;
+  font-size: 50px;
+  color: #ffddd0;
+  transition: transform 0.3s;
+  transform-origin: left; /* Set the transformation origin to the right */
+  display: inline-block; /* Ensures the width of the element adjusts based on its content */
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(
+    1.2
+  ); /* Increase the value to make the text grow more on hover */
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  color: #ffd700;
+  font-size: 20px;
+}
+
+li:hover {
+  color: #ffddd0;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+
+  /* height: auto; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.inner-container {
+  display: flex;
+  align-items: center;
+  max-width: 75%;
+}
+img {
+  border: 2px solid #ffd700;
+  margin: 10px;
+  padding: 10px;
+  height: auto;
+  width: 450px;
+}
+.hero-content {
+  /* max-width: 25px; */
+  background-color: #ffd700;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  height: 50%;
+  line-height: 1.75;
+}
+button {
+  background-color: #800020;
+  color: white;
+  padding: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+
+  /* Adding a box shadow for a beautiful effect */
+  box-shadow: 0px 4px 8px rgba(52, 152, 219, 0.5); /* Adjust the values to customize the shadow */
+  transition: box-shadow 0.3s;
+}
+button:hover {
+  background-color: #ffddd0;
+  color: #ffd700;
+  box-shadow: 0px 8px 16px rgba(52, 152, 219, 0.7); /* Adjust the values for the hover state */
+}
+
+.sub-section {
+  display: flex;
+  justify-content: center;
+
+  /* max-width: 750px; */
+}
+
+.sub-sec {
+  max-width: 75%;
+  display: flex;
+  align-items: end;
+  background-color: #ffd700;
+  border-radius: 15px;
+}
+
+.sub-content {
+  max-width: 700px;
+  text-align: justify;
+  padding: 20px;
+  margin-right: 20px;
+  line-height: 1.75;
+}
+.btn-sub-section {
+  max-width: auto;
+  height: 50px;
+  padding: 15px;
+  margin: 15px;
+}
+/*footer*/
+
+footer {
+  background-color: #800020;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  margin-top: 35px;
+}
